@@ -61,7 +61,7 @@ $mail->Body = $message;
 
 try {
     $mail->send();
-    header("Location: message.php");
+    header("Location: message.html");
 } catch (Exception $e) {
     echo "Mailer Error: " . $mail->ErrorInfo;
 }
